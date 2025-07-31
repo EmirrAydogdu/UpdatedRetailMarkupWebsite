@@ -1,0 +1,165 @@
+{
+    "navbar": {
+        "aboutNav": "Hakkımızda",
+        "CustomerCommentNav": "Söz Sizde",
+        "CustomerQuestionNav": "Sık Sorulanlar",
+        "AnswersNav": "Çözümlerimiz",
+        "processManageNav": "Süreç Yönetimi"
+    },
+    "Slider": {
+        "fixedHeader": "Geleceği Şimdi inşa Edin",
+        "slides1": {
+            "header": "Büyüme Odaklı <br> Stratejilerle Tanışın",
+            "comment": "Teknolojiyi iş gücünüzle birleştirerek performansınızı maksimuma çıkarıyoruz. <br> Daha az kaynakla daha fazlasını başarmak için yanınızdayız.",
+            "button": "Daha Fazlası"
+        },
+        "slides2": {
+            "header": "Omnichannel Deneyimi Mağazalarınızda",
+            "comment": "Müşterilerinizin fiziksel mağazalarınızdan başlayıp dijital platformlarda kesintisiz alışveriş yapmasını sağlayın. <br> Perakendede yeni bir dönemi birlikte başlatalım.",
+            "button": "Daha Fazlası"
+        },
+        "slides3": {
+            "header": "Müşterilerle Güçlü <br> Bağlar Kurun",
+            "comment": "Kişiselleştirilmiş deneyimlerle müşteri güvenini kazanın. <br> Tüm süreçlerinizi onların ihtiyaçlarına göre optimize ediyoruz.",
+            "button": "Daha Fazlası"
+        },
+        "slides4": {
+            "header": "Satışları Yeni <br> Zirvelere Taşıyın",
+            "comment": "Teknolojik çözümlerimizle iş süreçlerinizi hızlandırın ve gelirlerinizi artırın. <br> Stratejik entegrasyonlarla kârlılığınızı yükseltin.",
+            "button": "Daha Fazlası"
+        }
+    },
+    "About": {
+        "header": "Retail Markup Hakkında",
+        "title": "Dijital Gücünüz",
+        "content": "Retail Markup, e-ticaret ve iş süreçlerini kolaylaştıran yenilikçi çözümler sunar. Sipariş yönetimi, pazaryeri entegrasyonları ve özel yazılım geliştirme hizmetleriyle işletmelerin dijital dönüşümünü destekler. Müşterilerine özelleştirilmiş ve verimli çözümler sunarak işlerini büyütmelerine yardımcı olmayı amaçlar.",
+        "sections1": {
+            "title": "En iyi Hizmetler",
+            "content": "Kalite odaklı hizmetlerle iş süreçlerinizi verimli hale getiriyoruz."
+        },
+        "sections2": {
+            "title": "7/24 Çağrı Desteği",
+            "content": "İşletmenize kesintisiz destek sağlamak için 7/24 hizmetinizdeyiz."
+        }
+    },
+    "NumberData": {
+        "Cargo": "Kargo",
+        "Packet": "Paket",
+        "TurnoverIncrease": "Ciro Artışı",
+        "Report": "Rapor"
+    },
+    "CustomerComments": {
+        "header": "Söz Sizde",
+        "title": "Onların Sözleri, Bizim Gururumuz",
+        "comments1": {
+            "content": "Ekiplerinizin iş süreçlerine olan hakimiyeti ve proaktif yaklaşımı fark yaratıyor. İş birliği boyunca sorunsuz bir iletişim ve sonuç odaklı bir hizmet deneyimi yaşadık. Sizinle çalışmak gerçekten keyifliydi.",
+            "person": "LTB E-Ticaret Direktörü"
+        },
+        "comments2": {
+            "content": "Hedef odaklı yaklaşımlarınız ve sunduğunuz kaliteli hizmetlerle süreçlerimizi kusursuz bir şekilde yönettik. Sağladığınız hızlı çözümler ve güvenilir destek için sonsuz teşekkür ederiz.",
+            "person": "Armine E-Ticaret Direktörü"
+        },
+        "comments3": {
+            "content": "Kaliteye olan bağlılığınız ve süreçlerdeki titizliğiniz bizi etkiledi. İş birliğimiz süresince sağladığınız destekle hedeflerimize hızlı ve etkili bir şekilde ulaştık. Profesyonelliğiniz için teşekkür ederiz.",
+            "person": "D's Damat E-Ticaret Direktörü"
+        },
+        "comments4": {
+            "content": "Yenilikçi yaklaşımlarınız ve çözüm odaklı tutumunuz tüm süreçlerimizi kolaylaştırdı. Beklentilerimizin üzerinde bir hizmet alarak iş birliğimizden büyük memnuniyet duyduk. Bu harika deneyim için teşekkür ederiz.",
+            "person": "Avva E-Ticaret Direktörü"
+        }
+    },
+    "faq": {
+        "header": "Sık Sorulanlar",
+        "title": "Sizin İçin Cevapladık",
+        "questions1": {
+            "question": "Omnichannel stratejisi ile çoklu kanal (multichannel) arasındaki fark nedir?",
+            "answer": "Multichannel, her kanalın bağımsız çalıştığı bir yapıdır; kanallar arasında genellikle bağlantı yoktur. Omnichannel ise tüm kanalların entegre olduğu, müşterilerin bir platformda başlattıkları işlemi diğer bir platformda kesintisiz devam ettirebildiği bir deneyim sunar."
+        },
+        "questions2": {
+            "question": "Omnichannel stratejisinin müşteri deneyimine etkisi nedir?",
+            "answer": "Omnichannel sayesinde müşteriler, alışveriş yolculuklarında kesintisiz bir deneyim yaşar. Örneğin, bir müşteri web sitesinde bir ürün inceledikten sonra fiziksel mağazada aynı ürünü bulabilir ya da online satın aldığı bir ürünü mağazadan teslim alabilir. Bu yaklaşım, memnuniyeti ve sadakati artırır."
+        },
+        "questions3": {
+            "question": "Omnichannel yaklaşımı işletmeler için ne tür avantajlar sağlar?",
+            "answer": "Omnichannel, müşteri deneyimini geliştirmenin yanı sıra satışları artırır, müşteri sadakati oluşturur ve işletmenin tüm kanallarda tutarlı bir marka kimliği oluşturmasını sağlar. Ayrıca, müşteri davranışlarını daha iyi analiz ederek stratejik kararlar alınmasına olanak tanır."
+        },
+        "questions4": {
+            "question": "Omnichannel stratejisi karlılığı nasıl artırır?",
+            "answer": "Omnichannel sayesinde müşteri yaşam boyu değeri (CLV) artar. Müşteriler, daha sık ve farklı kanallardan alışveriş yaptıkları için genel gelir artışı sağlanır. Aynı zamanda müşteri kazanma maliyetleri (CAC) daha verimli hale gelir."
+        },
+        "questions5": {
+            "question": "Omnichannel stratejisi satışları nasıl artırır?",
+            "answer": "Omnichannel, müşterilere her kanalda sorunsuz bir deneyim sunarak alışverişi kolaylaştırır. Bu, müşterilerin alışveriş yapma olasılığını artırır ve çapraz satış (cross-sell) ve yukarı satış (up-sell) fırsatlarını optimize eder."
+        }
+    },
+    "Solutions": {
+        "header": "Neler Sunuyoruz?",
+        "title": "Akıllıca İş Çözümleri",
+        "content1": {
+            "title": "OMS",
+            "description": "Siparişlerinizi tek bir panelde toplayarak yönetimi kolaylaştırın. OMS sistemimizle, sipariş takibi, stok yönetimi ve faturalandırma işlemlerini otomatik hale getirerek süreçlerinizi hızlandırıyor ve hatasız bir iş akışı sağlıyoruz."
+        },
+        "content2": {
+            "title": "Marketplace",
+            "description": "Tüm pazaryeri satışlarınızı tek bir noktadan yönetin. Marketplace entegrasyonumuz sayesinde ürünlerinizi çeşitli platformlara kolayca ekleyin, stokları senkronize edin ve satış süreçlerinizi optimize ederek büyümeye odaklanın."
+        },
+        "content3": {
+            "title": "Software",
+            "description": "İşletmenize özel yazılım çözümleriyle dijital dönüşümünüzü destekleyin. Kullanıcı dostu arayüzler ve sağlam altyapılarla süreçlerinizi daha verimli hale getirerek işletmenizin potansiyelini en üst düzeye çıkarıyoruz."
+        },
+        "additionalSolutions": {
+            "header": "Çözümlerimiz",
+            "title": "Çözümlerimizle İş Süreçlerinizi Optimize Edin",
+            "web": "Web Site",
+            "erp": "ERP Entegrasyonu",
+            "cargo": "Kargo Entegrasyonu",
+            "eInvoice": "E-Fatura Entegrasyonu",
+            "marketplacePlus": "MarketPlace+",
+            "report": "Raporlama"
+        }
+    },
+    "ProcessManagement": {
+        "header": "Süreç Yönetimi",
+        "title": "Üç Adımda Başarı",
+        "steps1": {
+            "title": "İhtiyaçları Belirleyin",
+            "content": "Bize ulaşmanız yeterli! İhtiyaçlarınızı birlikte değerlendiriyor, size en uygun çözümleri belirliyoruz."
+        },
+        "steps2": {
+            "title": "Kolay ve Hızlı Kurulum",
+            "content": "Teklif onayının ardından sisteminizi hızla kuruyoruz. Entegrasyon süreci zahmetsiz ve sorunsuz şekilde tamamlanıyor."
+        },
+        "steps3": {
+            "title": "Gelirlerinizi Arttırın",
+            "content": "Sistemimizin devreye girmesiyle iş süreçleriniz hızlanır, verimliliğiniz artar ve ciroda gözle görülür bir yükseliş sağlanır."
+        }
+    },
+    "footer": {
+        "slogan": "Karlılığınızı Optimize Edin!",
+        "sections": {
+            "title": "Bölümler",
+            "home": "Anasayfa",
+            "about": "Hakkımızda",
+            "customerComments": "Söz Sizde",
+            "faq": "Sık Sorulanlar",
+            "solutions": "Çözümlerimiz",
+            "period": "Süreç Yönetimi"
+        },
+        "solutions": {
+            "title": "Çözümlerimiz",
+            "cargo": "Kargo Entegrasyonu",
+            "erp": "ERP Entegrasyonu",
+            "efatura": "E-Fatura Entegrasyonu",
+            "marketplacePlus": "MarketPlace+",
+            "report": "Raporlama"
+        },
+        "contact": {
+            "address": "19 Mayıs Mahallesi, Golden Plaza No:3 K:9, 34363 Şişli - İstanbul",
+            "workingHours": {
+                "text": "Çalışma Saatlerimiz:",
+                "days": "Pzt-Cum: 09.00 - 06.00",
+                "phoneNumber": "Telefon Numaramız"
+            }
+        }
+    }
+}

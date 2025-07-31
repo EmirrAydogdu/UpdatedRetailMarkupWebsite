@@ -1,0 +1,165 @@
+{
+    "navbar": {
+        "aboutNav": "About Us",
+        "CustomerCommentNav": "Your Words",
+        "CustomerQuestionNav": "FAQ",
+        "AnswersNav": "Our Solutions",
+        "processManageNav": "Process Management"
+    },
+    "Slider": {
+        "fixedHeader": "Build the Future Now",
+        "slides1": {
+            "header": "Discover Growth <br> Focused Strategies",
+            "comment": "We maximize your performance by combining technology with your workforce. <br> We're here to help you achieve more with fewer resources.",
+            "button": "Learn More"
+        },
+        "slides2": {
+            "header": "Omnichannel Experience <br> in Stores",
+            "comment": "Enable your customers to shop seamlessly from physical stores to digital platforms. <br> Let's start a new era in retail together.",
+            "button": "Learn More"
+        },
+        "slides3": {
+            "header": "Build Strong Connections <br> with Customers",
+            "comment": "Gain customer trust with personalized experiences. <br> We optimize all your processes according to their needs.",
+            "button": "Learn More"
+        },
+        "slides4": {
+            "header": "Take Sales to <br> New Heights",
+            "comment": "Accelerate your business processes and increase your revenue with our technological solutions. <br> Boost your profitability with strategic integrations.",
+            "button": "Learn More"
+        }
+    },
+    "About": {
+        "header": "About Retail Markup",
+        "title": "Make Commerce Easy",
+        "content": "We make commerce simple for everyone. By enabling entrepreneurs to create innovative products and scale businesses effortlessly, we aim to empower millions worldwide. Small and medium-sized businesses drive economic growth and form the backbone of our society. Our mission is to simplify operations so owners can focus on creating and selling, turning their dreams into successful realities.",
+        "sections1": {
+            "title": "Top Services",
+            "content": "We streamline your business processes with quality-focused services."
+        },
+        "sections2": {
+            "title": "24/7 Call Support",
+            "content": "We are here to provide uninterrupted support for your business 24/7."
+        }
+    },
+    "NumberData": {
+        "Cargo": "Cargo",
+        "Packet": "Package",
+        "TurnoverIncrease": "Turnover Increase",
+        "Report": "Report"
+    },
+    "CustomerComments": {
+        "header": "Your Words",
+        "title": "Their Words, Our Pride",
+        "comments1": {
+            "content": "Your teams' expertise in business processes and proactive approach make a difference. We experienced seamless communication and a result-oriented service during our collaboration. Working with you was truly enjoyable.",
+            "person": "LTB E-Commerce Director"
+        },
+        "comments2": {
+            "content": "With your goal-oriented approaches and the quality services you provide, we managed our processes flawlessly. Thank you for the quick solutions and reliable support.",
+            "person": "Armine E-Commerce Director"
+        },
+        "comments3": {
+            "content": "Your commitment to quality and meticulousness in processes impressed us. With the support you provided during our collaboration, we achieved our goals quickly and effectively. Thank you for your professionalism.",
+            "person": "D's Damat E-Commerce Director"
+        },
+        "comments4": {
+            "content": "Your innovative approaches and solution-oriented attitude simplified all our processes. We received a service beyond our expectations and were very satisfied with our collaboration. Thank you for this great experience.",
+            "person": "Avva E-Commerce Director"
+        }
+    },
+    "faq": {
+        "header": "FAQ",
+        "title": "We Answered for You",
+        "questions1": {
+            "question": "What is the difference between omnichannel strategy and multichannel?",
+            "answer": "Multichannel is a structure where each channel operates independently, and there is usually no connection between channels. Omnichannel, on the other hand, offers an integrated experience where customers can seamlessly continue their journey across platforms."
+        },
+        "questions2": {
+            "question": "What is the impact of omnichannel strategy on customer experience?",
+            "answer": "With omnichannel, customers enjoy a seamless experience during their shopping journey. For example, a customer can view a product on the website, find the same product in a physical store, or pick up an online order from the store. This approach increases satisfaction and loyalty."
+        },
+        "questions3": {
+            "question": "What advantages does the omnichannel approach provide for businesses?",
+            "answer": "Omnichannel improves customer experience, increases sales, builds customer loyalty, and ensures consistent brand identity across all channels. It also enables better analysis of customer behaviors for strategic decision-making."
+        },
+        "questions4": {
+            "question": "How does omnichannel strategy increase profitability?",
+            "answer": "With omnichannel, customer lifetime value (CLV) increases. Customers shop more frequently and through different channels, resulting in overall revenue growth. Additionally, customer acquisition costs (CAC) become more efficient."
+        },
+        "questions5": {
+            "question": "How does omnichannel strategy boost sales?",
+            "answer": "Omnichannel simplifies shopping by offering customers a seamless experience across all channels. This increases the likelihood of shopping and optimizes cross-sell and up-sell opportunities."
+        }
+    },
+    "Solutions": {
+        "header": "What We Offer",
+        "title": "Smart Business Solutions",
+        "content1": {
+            "title": "OMS",
+            "description": "Streamline your supply chain and retail operations with Retail Markup OMS. Manage orders with workflows based on stock levels, value, and more. Route orders to the nearest warehouse and ensure smooth fulfillment. Boost customer trust with instant order and shipping confirmations while keeping your team organized with notifications."
+        },
+        "content2": {
+            "title": "Marketplace",
+            "description": "Manage all your marketplace sales from one place. With our marketplace integration, easily list your products on various platforms, synchronize inventory, and focus on growth by optimizing sales processes."
+        },
+        "content3": {
+            "title": "Software",
+            "description": "Support your digital transformation with custom software solutions for your business. We make your processes more efficient with user-friendly interfaces and robust infrastructures, maximizing your business potential."
+        },
+        "additionalSolutions": {
+            "header": "Our Solutions",
+            "title": "Optimize Your Business Processes with Our Solutions",
+            "web": "Website",
+            "erp": "ERP Integration",
+            "cargo": "Cargo Integration",
+            "eInvoice": "E-Invoice Integration",
+            "marketplacePlus": "MarketPlace+",
+            "report": "Reporting"
+        }
+    },
+    "ProcessManagement": {
+        "header": "Process Management",
+        "title": "Success in Three Steps",
+        "steps1": {
+            "title": "Identify Needs",
+            "content": "Just contact us! We evaluate your needs together and determine the most suitable solutions for you."
+        },
+        "steps2": {
+            "title": "Easy and Fast Setup",
+            "content": "We quickly set up your system after approval. The integration process is effortless and seamless."
+        },
+        "steps3": {
+            "title": "Increase Your Revenue",
+            "content": "With our system in place, your business processes accelerate, efficiency increases, and a visible rise in turnover is achieved."
+        }
+    },
+    "footer": {
+        "slogan": "Optimize Your Profitability!",
+        "sections": {
+            "title": "Sections",
+            "home": "Home",
+            "about": "About Us",
+            "customerComments": "Your Words",
+            "faq": "FAQ",
+            "solutions": "Our Solutions",
+            "period": "Process Management"
+        },
+        "solutions": {
+            "title": "Our Solutions",
+            "cargo": "Cargo Integration",
+            "erp": "ERP Integration",
+            "efatura": "E-Invoice Integration",
+            "marketplacePlus": "MarketPlace+",
+            "report": "Reporting"
+        },
+        "contact": {
+            "address": "19 Mayıs District, Golden Plaza No:3 K:9, 34363 Sisli - Istanbul",
+            "workingHours": {
+                "text": "Working Hours:",
+                "days": "Mon-Fri: 09.00 - 18.00",
+                "phoneNumber": "Our Phone Number"
+            }
+        }
+    }
+}
