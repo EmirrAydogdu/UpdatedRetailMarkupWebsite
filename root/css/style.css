@@ -1011,7 +1011,7 @@ a.meanmenu-reveal {
     margin-top: -4px;
 }
 
-.banner__content h1 {
+.banner__content .sliderH1 {
     font-size: 60px;
     line-height: 80px;
     font-weight: 700;
@@ -1019,7 +1019,7 @@ a.meanmenu-reveal {
 }
 
 @media (max-width: 991px) {
-    .banner__content h1 {
+    .banner__content .sliderH1 {
         font-size: 50px;
         line-height: 60px;
         max-width: 800px;
@@ -1027,14 +1027,14 @@ a.meanmenu-reveal {
 }
 
 @media (max-width: 767px) {
-    .banner__content h1 {
+    .banner__content .sliderH1 {
         font-size: 40px;
         line-height: 50px;
     }
 }
 
 @media (max-width: 575px) {
-    .banner__content h1 {
+    .banner__content .sliderH1 {
         font-size: 25px;
         line-height: 40px;
     }
