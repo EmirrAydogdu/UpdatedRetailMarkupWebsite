@@ -1,4 +1,4 @@
-﻿
+
 (function ($) {
     ("use strict");
     setTimeout(function () {
@@ -163,46 +163,6 @@
         },
     });
 
-    //müşteriler
-    var swiper = new Swiper(".brand__slider", {
-        loop: true,
-        spaceBetween: 30,
-        speed: 300,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-        },
-        slidesPerView: 5,
-        slidesPerGroup: 1,
-        breakpoints: {
-            1400: {
-                slidesPerView: 6,
-                spaceBetween: 30,
-            },
-            1100: {
-                slidesPerView: 4,
-                spaceBetween: 25,
-            },
-            992: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-
-            },
-            767: {
-                slidesPerView: 4,
-                spaceBetween: 15,
-            },
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-            },
-            200: {
-                slidesPerView: 2,
-                spaceBetween: 5,
-            },
-        },
-    });
-
     //müşteri yorumları
     var swiper = new Swiper(".testimonial-two__slider", {
         loop: true,
@@ -242,6 +202,13 @@
     });
 
 
+    $(function () {
+        var track = document.getElementById('logosTrack');
+        if (!track.dataset.doubled) {
+            track.innerHTML = track.innerHTML + track.innerHTML; // içerik 2x
+            track.dataset.doubled = "true";
+        }
+    });
 
     $(document).on("click", "#openButton", function () {
         $("#targetElement").removeClass("sidebar__hide");
