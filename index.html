@@ -18,13 +18,16 @@
     <meta name="author" content="Retail Markup">
     <meta name="description"
         content="Retail Markup offers omnichannel solutions that integrate retail and e-commerce processes, supporting business growth.">
+
     <meta name="keywords"
-        content="Retail Markup, omnichannel solutions, retail software, OMS, order management system, ecommerce software, ERP integration, POS integration, inventory management, stock control, warehouse management, fulfillment, marketplace integration, B2B, B2C, digital commerce, unified commerce, multichannel retail, sales channel sync, logistics software">
+        content="Retail Markup, OMS Türkiye, Order Management System Türkiye, order, OMS, order management system, omnichannel solutions, omnichannel solutions Türkiye, retail software, retail software Türkiye, ecommerce software, ERP integration, POS integration, inventory management, stock control, warehouse management, fulfillment, marketplace integration, B2B, B2C, digital commerce, unified commerce, multichannel retail, sales channel sync, logistics software, sipariş yönetim sistemi, stok yönetimi yazılımı, depo yönetim sistemi, e-ticaret yazılımı Türkiye">
+
+
     <meta name="robots" content="index, follow">
     <meta name="publisher" content="Retail Markup">
 
 
-    <title translate="no">Retail Markup | Omnichannel Solutions</title>
+    <title translate="no">Retail Markup | Omnichannel Solutions & OMS</title>
     <link rel="icon" type="image/png" href="https://retailmarkup.com/root/images/logo/RetailMarkupMaviLogo.png?v=2" />
     <link rel="shortcut icon" type="image/png"
         href="https://retailmarkup.com/root/images/logo/RetailMarkupMaviLogo.png?v=2" />
@@ -52,6 +55,10 @@
     <link href="root/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
 
     <style>
+        #goToTheMap:hover {
+            color: white !important;
+        }
+
         #testimonials-section .swiper-slide>div {
             height: 540px;
         }
@@ -111,6 +118,89 @@
         #banner-area .swiper-slide:not(.swiper-slide-active) {
             opacity: 0 !important;
         }
+
+
+        @keyframes marquee {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+
+            to {
+                transform: translate3d(-50%, 0, 0);
+            }
+
+            /* içerik 2x olduğu için -50% yeter */
+        }
+
+        .brandMarquee {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        [data-theme="dark"] .brandMarquee {
+            background: transparent !important;
+        }
+
+        [data-theme="dark"] .brand-three-area {
+            background: linear-gradient(270deg, #3c72fc 6.32%, #00060c 216.42%) !important;
+        }
+
+        .logos {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logos::before,
+        .logos::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 220px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .logos::before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+        }
+
+        .logos::after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+        }
+
+        [data-theme="dark"] .logos::before {
+            display: none;
+        }
+
+        [data-theme="dark"] .logos::after {
+            display: none;
+        }
+
+
+        .logosTrack {
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 35s linear infinite;
+        }
+
+        @media (max-width: 576px) {
+
+            .logos::before,
+            .logos::after {
+                width: 120px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .logosTrack {
+                animation: none;
+            }
+        }
     </style>
 </head>
 
@@ -138,36 +228,53 @@
         <div id="preloader"></div>
 
         <!--Header-->
-        <div class="header-top py-3 overflow-hidden d-none d-lg-block">
-            <div class="container header__container">
+        <div class="header-top py-3 overflow-hidden d-none d-lg-block" role="contentinfo">
+            <div class="container header__container" itemscope itemtype="https://schema.org/Organization">
+                <span class="visually-hidden" itemprop="name">Retail Markup</span>
+
                 <div class="d-flex justify-content-between align-items-center">
-                    <ul class="info">
+                    <ul class="info" aria-label="Contact information">
                         <li>
-                            <i class="fa-regular fa-envelope ps-2"></i>
+                            <i class="fa-regular fa-envelope ps-2" aria-hidden="true"></i>
                             <a translate="no"
                                 href="mailto:hey@retailmarkup.com?subject=Contact&body=Merhaba, sizinle iletişime geçmek istiyorum."
-                                aria-label="Contact Us By Mail">
+                                aria-label="Contact us via email" itemprop="email">
                                 hey@retailmarkup.com
                             </a>
+                            <span class="visually-hidden">Omnichannel solutions, OMS, WMS, ERP integration
+                                support</span>
                         </li>
                         <li class="ms-4">
-                            <i class="fa-solid fa-phone-volume ps-2"></i>
-                            <a translate="no" href="tel:+908508882408" aria-label="Contact Us By Phone">+90 850 888 24
-                                08</a>
+                            <i class="fa-solid fa-phone-volume ps-2" aria-hidden="true"></i>
+                            <a translate="no" href="tel:+908508882408" aria-label="Call Retail Markup"
+                                itemprop="telephone">
+                                +90 850 888 24 08
+                            </a>
+                            <span class="visually-hidden">24/7 support for order management and marketplace
+                                integrations</span>
                         </li>
-
                     </ul>
-                    <ul class="link-info position-relative">
-                        <li><a class="text-center" href="https://www.instagram.com/retailmarkup/" target="_blank"
-                                aria-label="Contact Us By Instagram" rel="nofollow"><i
-                                    class="fa-brands fa-instagram"></i></a></li>
-                        <li><a class="text-center" href="https://www.linkedin.com/company/retailmarkup/" rel="nofollow"
-                                aria-label="Contact Us By Linkedin" target="_blank"><i
-                                    class="fa-brands fa-linkedin-in"></i></a></li>
+
+                    <ul class="link-info position-relative" aria-label="Social profiles" itemprop="sameAs">
+                        <li>
+                            <a class="text-center" href="https://www.instagram.com/retailmarkup/" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Instagram - Retail Markup">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                <span class="visually-hidden">Instagram profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-center" href="https://www.linkedin.com/company/retailmarkup/" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="LinkedIn - Retail Markup">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                                <span class="visually-hidden">LinkedIn company page</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
+
 
         <!-- Navbar -->
         <header id="page-navbar" class="header-area">
@@ -175,7 +282,8 @@
                 <div class="header__main d-flex align-items-center justify-content-between flex-wrap container">
                     <!-- Logo Section -->
                     <a href="index.html" class="navbarLogo" aria-label="Retail Markup Home Page">
-                        <img src="root/images/logo/RetailMarkupBeyazLogo.png" alt="logo" class="logo" draggable="false">
+                        <img src="root/images/logo/RetailMarkupBeyazLogo.png" alt="Retail Markup Logo" class="logo"
+                            draggable="false">
                     </a>
 
                     <!-- Main Menu -->
@@ -217,17 +325,6 @@
                                 <i id="theme-icon" class="bi bi-brightness-high p-1" style="font-size: 20px;"></i>
                             </a>
                         </div>
-
-                        <!-- <div class="language-select">
-                            <select id="language-select" class="selectpicker language-selectpicker">
-                                <option data-content="<span class='fi fi-tr me-2' title='Türkiye'></span>Türkçe"
-                                    value="tr">Türkçe
-                                </option>
-                                <option data-content="<span class='fi fi-gb me-2' title='English'></span>English"
-                                    value="en">
-                                    English</option>
-                            </select>
-                        </div> -->
                     </div>
 
                     <!-- Mobile Menu Toggle -->
@@ -247,15 +344,6 @@
 
 
             <div class="d-flex justify-content-between mb-2">
-                <!-- <div class="language-select-mobile d-flex justify-content-center align-items-center">
-                    <select id="language-select-mobile" class="selectpicker selectpicker-mobile language-selectpicker">
-                        <option data-content="<span class='fi fi-tr me-2' title='Türkiye'></span>Türkçe" value="tr">
-                            Türkçe</option>
-                        <option data-content="<span class='fi fi-gb me-2' title='English'></span>English" value="en">
-                            English
-                        </option>
-                    </select>
-                </div> -->
                 <div class="d-flex justify-content-end align-items-center">
                     <div class="dark-light-mode d-flex justify-content-center align-items-center rounded-circle">
                         <a id="sidebar-theme-toggle" title="Toggles light & dark">
@@ -585,6 +673,51 @@
                 </div>
             </section>
 
+            <div id="brand-three-area" class="brand-three-area bg-image">
+                <div class="container brandMarquee">
+                    <div class="logos" aria-label="Müşteri/partner logoları">
+                        <div class="logosTrack" id="logosTrack">
+                            <span class="brand__image image brand_avva">
+                                <img src="root/images/customers/avva-logo.png" alt="AVVA" class="user-select-none"
+                                    loading="lazy">
+                            </span>
+                            <span class="brand__image image brand_suwen">
+                                <img src="root/images/customers/suwen-logo.png" alt="Suwen" class="user-select-none"
+                                    loading="lazy">
+                            </span>
+                            <span class="brand__image image brand_damat">
+                                <img src="root/images/customers/damatTween-logo.png" alt="Damat Tween"
+                                    class="user-select-none" loading="lazy">
+                            </span>
+                            <span class="brand__image image brand_lescon">
+                                <img src="root/images/customers/lescon-logo.png" alt="Lescon" class="user-select-none"
+                                    loading="lazy">
+                            </span>
+                            <span class="brand__image image brand_ds">
+                                <img src="root/images/customers/dsdamat-logo.png" alt="DS Damat"
+                                    class="user-select-none" loading="lazy">
+                            </span>
+                            <span class="brand__image image brand_ltb">
+                                <img src="root/images/customers/ltb-logo.png" alt="LTB" class="user-select-none"
+                                    loading="lazy">
+                            </span>
+                            <span class="brand__image image brand_karaca">
+                                <img src="root/images/customers/Op-Karaca.png" alt="Karaca" class="user-select-none"
+                                    loading="lazy">
+                            </span>
+                            <span class="brand__image image brand_linens">
+                                <img src="root/images/customers/Linens.png" alt="Linens" class="user-select-none"
+                                    loading="lazy">
+                            </span>
+                            <span class="brand__image image brand_tac">
+                                <img src="root/images/customers/tac.png" alt="Taç" class="user-select-none"
+                                    loading="lazy">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section id="about-section" class="about-area sub-bg pt-200">
                 <div class="about__shape wow slideInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
                     <img src="root/images/shape/about-line.png" alt="shape" loading="lazy">
@@ -641,8 +774,9 @@
                                             <img src="root/images/icon/about-icon1.png" alt="icon" loading="lazy">
                                         </div>
                                         <div class="content">
-                                            <h4 data-translate="About.sections1.title" class="mb-1">Top Services
-                                            </h4>
+                                            <div data-translate="About.sections2.title" class="h4 mb-1"
+                                                style="font-weight: 700;">Top Services
+                                            </div>
                                             <p data-translate="About.sections1.content">We streamline your business
                                                 processes with quality-focused services.</p>
                                         </div>
@@ -654,7 +788,8 @@
                                             <img src="root/images/icon/about-icon2.png" alt="icon" loading="lazy">
                                         </div>
                                         <div class="content">
-                                            <div data-translate="About.sections2.title" class="h4 mb-1">24/7 Call
+                                            <div data-translate="About.sections2.title" class="h4 mb-1"
+                                                style="font-weight: 700;">24/7 Call
                                                 Support
                                             </div>
                                             <p data-translate="About.sections2.content">We are here to provide
@@ -723,7 +858,7 @@
                 <div class="container">
 
                     <div class="section-header text-center mb-70">
-                        <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <h5 class="wow fadeInUp text-header-h5" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <svg class="me-1" width="20" height="12" viewBox="0 0 20 12" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.75" y="0.75" width="18.5" height="10.5" rx="5.25" stroke="#3C72FC"
@@ -941,7 +1076,8 @@
 
                         <div class="col-lg-7">
                             <div class="section-header mb-40">
-                                <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <h5 class="wow fadeInUp text-header-h5" data-wow-delay="00ms"
+                                    data-wow-duration="1500ms">
                                     <svg class="me-1" width="20" height="12" viewBox="0 0 20 12" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.747803" width="18.5" height="10.5" rx="5.25"
@@ -971,18 +1107,22 @@
                                             <button data-translate="faq.questions1.question" class="accordion-button"
                                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                                 aria-expanded="true" aria-controls="collapseOne">
-                                                What is an OMS(Order Management System) ?
+                                                What is an Order Management System (OMS)?
                                             </button>
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse show"
                                             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 <p data-translate="faq.questions1.answer">
-                                                    OMS is an order management system. It allows you to receive orders,
-                                                    track your inventory, and manage billing and shipping processes from
-                                                    a single platform. By optimizing your business processes, it
-                                                    increases efficiency, reduces errors, and improves your customer
-                                                    experience.
+                                                    An <strong>Order Management System (OMS)</strong> is software that
+                                                    manages the entire
+                                                    <strong>order lifecycle</strong> across e-commerce, marketplaces,
+                                                    and retail stores.
+                                                    It centralizes sales, inventory, billing and shipping in one
+                                                    platform.
+                                                    OMS improves <strong>inventory visibility</strong>, reduces errors,
+                                                    and enhances
+                                                    customer experience by automating manual processes.
                                                 </p>
                                             </div>
                                         </div>
@@ -995,19 +1135,22 @@
                                                 class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                 aria-expanded="false" aria-controls="collapseTwo">
-                                                How does an OMS work ?
+                                                How does an OMS work?
                                             </button>
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse"
                                             aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 <p data-translate="faq.questions2.answer">
-                                                    An OMS receives and processes orders, updates inventory in
-                                                    real-time, and manages shipping. It detects orders from various
-                                                    channels, ensuring accurate stock levels and automatic invoicing and
-                                                    packaging. You can track orders and provide updates to customers,
-                                                    streamlining operations, reducing errors, and improving customer
-                                                    satisfaction.
+                                                    An OMS collects orders from multiple sales channels such as online
+                                                    stores,
+                                                    <strong>marketplaces</strong> (Amazon, Trendyol, Hepsiburada) and
+                                                    physical shops.
+                                                    It updates inventory in <strong>real time</strong>, generates
+                                                    invoices, and routes shipments
+                                                    to the nearest warehouse. This enables faster <strong>order
+                                                        fulfillment</strong>,
+                                                    accurate stock management and better customer satisfaction.
                                                 </p>
                                             </div>
                                         </div>
@@ -1020,18 +1163,20 @@
                                                 class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapsethree"
                                                 aria-expanded="false" aria-controls="collapsethree">
-                                                Is an OMS system secure ?
+                                                Is an OMS system secure?
                                             </button>
                                         </h2>
                                         <div id="collapsethree" class="accordion-collapse collapse"
                                             aria-labelledby="headingthree" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 <p data-translate="faq.questions3.answer">
-                                                    Yes, OMS systems have high security standards. Your data is
-                                                    encrypted to protect against unauthorized access and stored on
-                                                    secure servers. User authorization and access controls safeguard
-                                                    your transactions. Additionally, regular backups and security
-                                                    updates ensure that your system is always secure.
+                                                    Yes. A professional <strong>OMS platform</strong> follows
+                                                    industry-level
+                                                    <strong>data security standards</strong>. All transactions are
+                                                    encrypted,
+                                                    hosted on secure servers and protected with access controls.
+                                                    Regular backups and updates ensure compliance and business
+                                                    continuity.
                                                 </p>
                                             </div>
                                         </div>
@@ -1044,21 +1189,21 @@
                                                 class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                                 aria-expanded="false" aria-controls="collapseFour">
-                                                How does an OMS help with inventory management ?
+                                                How does an OMS help with inventory management?
                                             </button>
                                         </h2>
                                         <div id="collapseFour" class="accordion-collapse collapse"
                                             aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 <p data-translate="faq.questions4.answer">
-                                                    An OMS tracks your inventory in real-time and updates your stock
-                                                    levels in integration with orders. This eliminates the risk of
-                                                    overstocking or understocking. The system monitors inventory
-                                                    movements and automatically identifies reorder needs. Additionally,
-                                                    by optimizing supply chain and warehouse management processes, it
-                                                    ensures your inventory is managed efficiently. This allows you to
-                                                    reduce costs and provide faster, more accurate service to your
-                                                    customers.
+                                                    An OMS integrates with <strong>inventory management</strong> and
+                                                    <strong>warehouse management systems (WMS)</strong> to track stock
+                                                    in real time.
+                                                    It prevents overstocking or stockouts, automates reorders, and
+                                                    optimizes
+                                                    <strong>supply chain operations</strong>. This reduces costs while
+                                                    delivering
+                                                    faster and more accurate service to customers.
                                                 </p>
                                             </div>
                                         </div>
@@ -1071,18 +1216,18 @@
                                                 class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                                 aria-expanded="false" aria-controls="collapseFive">
-                                                Do you perform package splitting for marketplace orders ?
+                                                Can OMS split packages for marketplace orders?
                                             </button>
                                         </h2>
                                         <div id="collapseFive" class="accordion-collapse collapse"
                                             aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 <p data-translate="faq.questions5.answer">
-                                                    Yes, for marketplace orders from platforms like Trendyol,
-                                                    HepsiBurada, N11, LCW, Amazon, multiple packages can be shipped from
-                                                    warehouses and stores. Each item in your order can be sent in
-                                                    separate packages, which speeds up the delivery process and ensures
-                                                    accurate fulfillment.
+                                                    Yes. OMS supports <strong>package splitting</strong> for marketplace
+                                                    orders
+                                                    (Trendyol, Hepsiburada, N11, LC Waikiki, Amazon).
+                                                    Items can be shipped from different stores or warehouses, ensuring
+                                                    <strong>faster delivery</strong> and accurate fulfillment.
                                                 </p>
                                             </div>
                                         </div>
@@ -1095,106 +1240,30 @@
                                                 class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseSix"
                                                 aria-expanded="false" aria-controls="collapseSix">
-                                                Which shipping companies do you integrate with ?
+                                                Which shipping companies do you integrate with?
                                             </button>
                                         </h2>
                                         <div id="collapseSix" class="accordion-collapse collapse"
                                             aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 <p data-translate="faq.questions6.answer">
-                                                    Yes, we can integrate seamlessly with leading shipping companies
-                                                    such as Trendyol Express, HepsiJet, Yurtiçi, MNG, and SÜRAT.
-                                                    Depending on your needs, you can easily connect with your chosen
-                                                    shipping company to deliver orders to your customers in the fastest
-                                                    and most reliable way.
+                                                    OMS can integrate with leading <strong>shipping and cargo
+                                                        providers</strong>
+                                                    such as Trendyol Express, HepsiJet, Yurtiçi, MNG and Sürat.
+                                                    Additional custom integrations are possible to deliver orders
+                                                    quickly and reliably according to your business needs.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <div id="brand-three-area" class="brand-three-area bg-image pt-50 pb-50"
-                data-background="root/images/customers/black-white-brush-stroke-texture.png">
-                <div class="brand-three__line1 beatifulImage">
-                    <img src="root/images/shape/brand-three-line1.png" alt="shape" loading="lazy">
-                </div>
-                <div class="brand-three__shape1 beatifulImage">
-                    <img src="root/images/shape/brand-three-shape1.png" alt="shape" loading="lazy">
-                </div>
-                <div class="brand-three__line2 beatifulImage">
-                    <img src="root/images/shape/brand-three-line2.png" alt="shape" loading="lazy">
-                </div>
-                <div class="brand-three__shape2 beatifulImage">
-                    <img src="root/images/shape/brand-three-shape2.png" alt="shape" loading="lazy">
-                </div>
-                <div class="container">
-                    <div class="swiper brand__slider customers-container">
-                        <div class="swiper-wrapper d-flex align-items-center">
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_avva">
-                                    <img src="root/images/customers/avva-logo.png" alt="image" class="user-select-none"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_suwen">
-                                    <img src="root/images/customers/suwen-logo.png" alt="Suwen Logo"
-                                        class="user-select-none" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_damat">
-                                    <img src="root/images/customers/damatTween-logo.png" alt="Damat Tween Logo"
-                                        class="user-select-none" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_lescon">
-                                    <img src="root/images/customers/lescon-logo.png" alt="Lescon logo"
-                                        class="user-select-none" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_ds">
-                                    <img src="root/images/customers/dsdamat-logo.png" alt="Ds Logo"
-                                        class="user-select-none" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_ltb">
-                                    <img src="root/images/customers/ltb-logo.png" alt="Ltb Logo"
-                                        class="user-select-none" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_karaca">
-                                    <img src="root/images/customers/Op-Karaca.png" alt="Çift Geyik Karaca Logo"
-                                        class="user-select-none rounded" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_linens">
-                                    <img src="root/images/customers/Linens.png" alt="Linens Logo"
-                                        class="user-select-none" loading="lazy">
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="brand__image image brand_linens">
-                                    <img src="root/images/customers/tac.png" alt="Taç Logo" class="user-select-none"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <section id="service-section" class="service-area pt-200 pb-120">
                 <div class="service__shape wow slideInRight">
@@ -1205,19 +1274,20 @@
 
                     <div class="d-flex flex-wrap gap-4 align-items-center justify-content-between mb-60">
                         <div class="section-header">
-                            <h5 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <h5 class="wow fadeInLeft text-header-h5" data-wow-delay="00ms" data-wow-duration="1500ms">
                                 <img class="me-1" src="root/images/icon/section-title.png" alt="icon" loading="lazy">
                                 <span data-translate="Solutions.header">What We Offer?</span>
                             </h5>
                             <h2 data-translate="Solutions.title" class="wow fadeInLeft" data-wow-delay="200ms"
                                 data-wow-duration="1500ms">
-                                Smart Business Solutions
+                                Smart Omnichannel Solutions
                             </h2>
                         </div>
                     </div>
 
                     <div class="row g-4 align-items-center">
 
+                        <!-- Marketplace+ -->
                         <div class="col-lg-4 col-md-6 wow bounceInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
                             <div class="service__item active">
                                 <div class="service-shape">
@@ -1227,23 +1297,22 @@
                                     <img src="root/images/icon/service-icon2.png" alt="icon" loading="lazy">
                                 </div>
                                 <h4 style="pointer-events: none!important">
-                                    <a href="#" data-translate="Solutions.content2.title">
-                                        Marketplace+
-                                    </a>
+                                    <a href="#" data-translate="Solutions.content2.title">Marketplace+</a>
                                 </h4>
                                 <p data-translate="Solutions.content2.description">
-                                    Seamlessly connect your e-commerce platform with your ERP system to centralize data
-                                    and boost efficiency. Avoid manual updates by synchronizing product, inventory, and
-                                    order information in real time. <br>
-
-                                    While it has an initial cost, ERP integration saves time, reduces errors, and scales
-                                    with your business growth.
+                                    Connect your e-commerce stores with leading marketplaces such as Trendyol,
+                                    Hepsiburada, Amazon
+                                    and N11. <br>
+                                    Synchronize product, stock and order data in real time with ERP integration. <br>
+                                    Avoid manual updates, reduce errors, and increase efficiency with a scalable
+                                    <strong>marketplace integration solution</strong>.
                                 </p>
                             </div>
                         </div>
 
+                        <!-- OMS -->
                         <div class="col-lg-4 col-md-6 wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1000ms">
-                            <div class="service__item" style=" min-height: 520px!important;">
+                            <div class="service__item" style="min-height: 520px!important;">
                                 <div class="service-shape">
                                     <img src="root/images/shape/service-item-shape.png" alt="shape" loading="lazy">
                                 </div>
@@ -1251,22 +1320,22 @@
                                     <img src="root/images/icon/service-icon1.png" alt="icon" loading="lazy">
                                 </div>
                                 <h4 style="pointer-events: none!important">
-                                    <a href="#" data-translate="Solutions.content1.title">
-                                        OMS
-                                    </a>
+                                    <a href="#" data-translate="Solutions.content1.title">OMS</a>
                                 </h4>
                                 <p data-translate="Solutions.content1.description">
-                                    Streamline your supply chain and retail operations with <span
-                                        translate="no">&nbsp;Retail&nbsp;Markup&nbsp;</span> OMS. <br>
-                                    Manage
-                                    orders with workflows based on stock levels, value, and more. <br> Route orders to
-                                    the nearest warehouse and ensure smooth fulfillment. <br> Boost customer trust with
-                                    instant order and shipping confirmations while keeping your team organized with
-                                    notifications.
+                                    Manage all sales channels with <span
+                                        translate="no">&nbsp;Retail&nbsp;Markup&nbsp;</span>
+                                    <strong>Order Management System (OMS)</strong>. <br>
+                                    Route orders automatically to the nearest store or warehouse, manage workflows by
+                                    stock and value,
+                                    and ensure fast fulfillment. <br>
+                                    Gain customer trust with instant order & shipping updates while improving
+                                    <strong>inventory visibility and profitability</strong>.
                                 </p>
                             </div>
                         </div>
 
+                        <!-- ERP & Software -->
                         <div class="col-lg-4 col-md-6 wow bounceInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
                             <div class="service__item">
                                 <div class="service-shape">
@@ -1276,26 +1345,23 @@
                                     <img src="root/images/icon/service-icon3.png" alt="icon" loading="lazy">
                                 </div>
                                 <h4 style="pointer-events: none!important">
-                                    <a href="#" data-translate="Solutions.content3.title">
-                                        Software
-                                    </a>
+                                    <a href="#" data-translate="Solutions.content3.title">ERP & Software</a>
                                 </h4>
                                 <p data-translate="Solutions.content3.description">
-                                    Streamline your business with tailored ERP solutions that centralize data and
-                                    processes. <br>
-
-                                    Our flexible model lets you scale your dedicated team as needed, <br>ensuring
-                                    seamless
-                                    integration and support for upgrades.
-
-                                    We deliver custom, user-friendly software that scales with your business and
-                                    provides 24/7 reliability, backed by ongoing support.
+                                    Optimize your business with tailored <strong>ERP and retail software
+                                        solutions</strong>. <br>
+                                    Centralize finance, stock, and order management with seamless integration. <br>
+                                    Scale easily with flexible modules such as <em>depo yönetim sistemi (WMS)</em>,
+                                    <em>stok yönetimi yazılımı</em> and reporting tools. <br>
+                                    Get reliable 24/7 support and a system that grows with your business.
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
+
 
             <section id="offerArea" class="offer-area secondary-bg pt-200 pb-200">
                 <div class="offer__shadow wow fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -1313,9 +1379,10 @@
 
                     <div class="d-flex gap-4 flex-wrap align-items-center justify-content-between mb-95">
                         <div class="section-header">
-                            <h5 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <h5 class="wow fadeInLeft text-header-h5" data-wow-delay="00ms" data-wow-duration="1500ms">
                                 <img class="me-1" src="root/images/icon/section-title.png" alt="icon" loading="lazy">
-                                <span data-translate="Solutions.additionalSolutions.header">Our Solutions</span>
+                                <span data-translate="Solutions.additionalSolutions.header">Our
+                                    Solutions</span>
                             </h5>
                             <h2 data-translate="Solutions.additionalSolutions.title" class="text-white wow fadeInLeft"
                                 data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -1460,8 +1527,9 @@
             <section id="period-section" class="process-area pt-200 pb-120">
                 <div class="container">
                     <div class="section-header text-center mb-60">
-                        <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <img class="me-1" src="root/images/icon/section-title.png" alt="icon" loading="lazy">
+                        <h5 class="wow fadeInUp text-header-h5" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <img class="me-1" src="root/images/icon/section-title.png" alt="process section icon"
+                                loading="lazy">
                             <span data-translate="ProcessManagement.header"></span>
                             Process Management
                         </h5>
@@ -1472,91 +1540,75 @@
                     </div>
                     <div class="row g-4">
 
+                        <!-- Step 1 -->
                         <div class="col-lg-4 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="process__item mb-100">
                                 <div class="process-arry bobble__animation">
-                                    <img src="root/images/Surec/process-arry.png" alt="arry-icon" loading="lazy">
+                                    <img src="root/images/Surec/process-arry.png" alt="arrow step 1" loading="lazy">
                                 </div>
                                 <div class="process__image" style="width: 200px; height: 200px">
                                     <img src="root/images/Surec/surec1.png" loading="lazy"
-                                        alt="Surec Gosterim1 image" />
+                                        alt="identify ecommerce and retail needs" />
                                     <span class="process-number">1</span>
                                 </div>
                                 <div class="process__content">
-                                    <h4 class="mt-25 mb-10" data-translate="ProcessManagement.steps1.title">
-                                        Identify Needs
-                                    </h4>
-                                    <p data-translate="ProcessManagement.steps1.content">
-                                        Just contact us! We evaluate your needs together and determine the most suitable
-                                        solutions for you.
+                                    <h4 class="mt-25 mb-10">Identify Needs</h4>
+                                    <p>
+                                        We analyze your <strong>sales channels</strong> and <strong>inventory</strong>
+                                        to choose the right <strong>OMS & ERP integrations</strong> for your business.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Step 2 -->
                         <div class="col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="process__item mb-100">
                                 <div class="process-arry bobble__animation">
-                                    <img src="root/images/Surec/process-arry.png" alt="arry-icon" loading="lazy">
+                                    <img src="root/images/Surec/process-arry.png" alt="arrow step 2" loading="lazy">
                                 </div>
                                 <div class="process__image" style="width: 200px; height: 200px">
                                     <img src="root/images/Surec/surec2.png" loading="lazy"
-                                        alt="Surec Gosterim2 image" />
-
+                                        alt="easy integration with OMS and ERP" />
                                     <span class="process-number">2</span>
                                 </div>
                                 <div class="process__content">
-                                    <h4 class="mt-25 mb-10" data-translate="ProcessManagement.steps2.title">
-                                        Easy and Fast Setup
-                                    </h4>
-                                    <p data-translate="ProcessManagement.steps2.content">
-                                        We quickly set up your system after approval. The integration process is
-                                        effortless and seamless.
+                                    <h4 class="mt-25 mb-10">Easy and Fast Setup</h4>
+                                    <p>
+                                        We set up your <strong>OMS, WMS</strong> and <strong>ERP</strong> quickly,
+                                        ensuring real-time <strong>order</strong> and <strong>stock sync</strong> from
+                                        day one.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Step 3 -->
                         <div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                             <div class="process__item">
                                 <div class="process__image" style="width: 200px; height: 200px">
                                     <img src="root/images/Surec/surec3.png" loading="lazy"
-                                        alt="Surec Gosterim3 image" />
-
+                                        alt="increase sales and efficiency with integration" />
                                     <span class="process-number">3</span>
                                 </div>
                                 <div class="process__content">
-                                    <h4 class="mt-25 mb-10" data-translate="ProcessManagement.steps3.title">
-                                        Increase Your Revenue
-                                    </h4>
-                                    <p data-translate="ProcessManagement.steps3.content">
-                                        With our system in place, your business processes accelerate, efficiency
-                                        increases, and a visible rise in turnover is achieved.
+                                    <h4 class="mt-25 mb-10">Increase Revenue</h4>
+                                    <p>
+                                        Faster <strong>order fulfillment</strong>, accurate <strong>inventory
+                                            tracking</strong>,
+                                        and better <strong>customer experience</strong> mean higher sales and lower
+                                        costs.
                                     </p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
 
+
         </main>
-
-        <div id="wtsapp">
-            <a class="Btn" href="https://wa.me/905320157802" aria-label="Contact Us By WhatsApp" target="_blank"
-                rel="noopener noreferrer">
-                <div class="sign">
-                    <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
-                        <path
-                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="text">Whatsapp</div>
-            </a>
-        </div>
-
-
 
         <footer class="footer-area secondary-bg">
             <div class="footer__shape-regular-left wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
@@ -1579,133 +1631,155 @@
             <div class="container">
                 <div class="footer__wrp pt-100 pb-75">
 
-                    <div class="footer__item item-big wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <a href="index.html" class="logo mb-30" aria-label="Retail Markup Home Page">
-                            <img src="root/images/logo/RetailMarkupBeyazLogo.png" alt="RetailLogo" style="width: 10rem"
-                                loading="lazy">
+                    <div class="footer__item item-big">
+                        <a href="/" class="logo mb-30" aria-label="Retail Markup Home Page">
+                            <img src="root/images/logo/RetailMarkupBeyazLogo.png" alt="Retail Markup Logo"
+                                style="width: 10rem" loading="lazy">
                         </a>
+
                         <p data-translate="footer.slogan">
                             Optimize Your Profitability!
                         </p>
+
                         <ul class="social-icon">
-                            <li><a class="text-center" href="https://www.instagram.com/retailmarkup/" target="_blank"
-                                    aria-label="Contact Us By Instagram" rel="nofollow"><i
-                                        class="fa-brands fa-instagram"></i></a></li>
-                            <li style="margin-bottom: 15px!important"><a class="text-center"
-                                    aria-label="Contact Us By Linkedin" aria-label="Contact Us By Linkedin"
-                                    href="https://www.linkedin.com/company/retailmarkup/" target="_blank"
-                                    rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <h3 class="footer-title mb-4" data-translate="footer.sections.title">Sections</h3>
-                        <ul>
                             <li>
-                                <a href="#about-section" aria-label="Retail Markup Home Page About Section">
-                                    <i class="fa-solid fa-angles-right"></i>
-                                    <span data-translate="footer.sections.about">About Us</span>
+                                <a class="text-center" href="https://www.instagram.com/retailmarkup/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Contact us on Instagram" title="Instagram">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#faq-section" aria-label="Retail Markup Home Page FAQ Section">
-                                    <i class="fa-solid fa-angles-right"></i>
-                                    <span data-translate="footer.sections.faq">FAQ</span>
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#service-section" aria-label="Retail Markup Home Page Solutions Section">
-                                    <i class="fa-solid fa-angles-right"></i>
-                                    <span data-translate="footer.sections.solutions">Our Solutions</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#period-section" class="d-flex justify-content-left align-items-center"
-                                    aria-label="Retail Markup Process Management Page">
-                                    <i class="fa-solid fa-angles-right pe-1"></i>
-                                    <span data-translate="footer.sections.period">Process Management</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="References/index.html" class="d-flex justify-content-left align-items-center"
-                                    aria-label="Retail Markup References Page">
-                                    <i class="fa-solid fa-angles-right pe-1"></i>
-                                    <span data-translate="footer.references">References</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact/index.html" class="d-flex justify-content-left align-items-center"
-                                    aria-label="Retail Markup Contact Page">
-                                    <i class="fa-solid fa-angles-right pe-1"></i>
-                                    <span data-translate="footer.contact">Contact</span>
+                            <li class="mb-3">
+                                <a class="text-center" href="https://www.linkedin.com/company/retailmarkup/"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Contact us on LinkedIn"
+                                    title="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="footer__item item-sm wow fadeInUp mt-5 mt-md-0" data-wow-delay="400ms"
-                        data-wow-duration="1500ms">
-                        <h3 data-translate="footer.solutions.title" class="footer-title mb-4">Our Solutions</h3>
+
+                    <nav class="footer__item item-sm" aria-label="Footer navigation">
+                        <h2 class="footer-title mb-4 h3">Sections</h2>
                         <ul>
                             <li>
-                                <a href="#offerArea" aria-label="Our Solutions In Store Sales">
-                                    <i class="fa-solid fa-angles-right"></i>
+                                <a href="/#about-section">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/#faq-section">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/#service-section">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                                    Our Solutions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/#period-section">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                                    Process Management
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/references/">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                                    References
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/contact/">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <nav class="footer__item item-sm mt-5 mt-md-0" aria-label="Solutions">
+                        <h2 class="footer-title mb-4 h3" data-translate="footer.solutions.title">Our Solutions</h2>
+                        <ul>
+                            <li>
+                                <a href="/solutions/in-store-sales/">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
                                     <span data-translate="footer.solutions.cargo">In Store Sales</span>
                                 </a>
                             </li>
                             <li>
-
-                                <a href="#offerArea" aria-label="Our Solutions Click & Collect">
-                                    <i class="fa-solid fa-angles-right"></i>
-                                    <span data-translate="footer.solutions.erp">Click & Collect</span>
+                                <a href="/solutions/click-and-collect/">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                                    <span data-translate="footer.solutions.erp">Click &amp; Collect</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#offerArea" aria-label="Our Solutions Returns Management">
-                                    <i class="fa-solid fa-angles-right"></i>
+                                <a href="/solutions/returns-management/">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
                                     <span data-translate="footer.solutions.efatura">Returns Management</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#offerArea" aria-label="Our Solutions MarketPlace+">
-                                    <i class="fa-solid fa-angles-right"></i>
+                                <a href="/solutions/marketplace-plus/">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
                                     <span data-translate="footer.solutions.marketplacePlus">MarketPlace+</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#offerArea" aria-label="Our Solutions Reporting">
-                                    <i class="fa-solid fa-angles-right"></i>
+                                <a href="/solutions/reporting/">
+                                    <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
                                     <span data-translate="footer.solutions.report">Reporting</span>
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
 
-                    <div class="footer__item item-big wow fadeInUp mt-5 mt-xl-0" data-wow-delay="600ms"
-                        data-wow-duration="1500ms">
-                        <h3 class="footer-title mb-4">Contact Us</h3>
-                        <p class="mb-20" data-translate="footer.contact.address">19 Mayıs District, Golden Plaza No:3
-                            K:9, 34363 Sisli - Istanbul</p>
-                        <ul class="footer-contact">
-                            <li>
-                                <i class="fa-regular fa-clock"></i>
+
+                    <div class="footer__item item-big mt-5 mt-xl-0" aria-labelledby="footer-contact-title">
+                        <h2 id="footer-contact-title h3" class="footer-title mb-4">Contact Us</h2>
+
+                        <!-- Address -->
+                        <address class="mb-20 not-italic text-white">
+                            19 Mayıs District, Golden Plaza No:3 K:9, 34363 Şişli – Istanbul
+                            <br>
+                            <a href="https://maps.google.com/?q=19+May%C4%B1s+Mahallesi+Golden+Plaza+No:3+K:9+34363+%C5%9Ei%C5%9Fli+Istanbul"
+                                target="_blank" rel="noopener noreferrer" aria-label="Open address in Google Maps"
+                                id="goToTheMap" class="text-secondary">
+                                View on map
+                            </a>
+                        </address>
+
+                        <ul class="footer-contact list-unstyled m-0">
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="fa-regular fa-clock me-2 mt-1" aria-hidden="true"></i>
                                 <div class="info">
-                                    <h5 data-translate="footer.contact.workingHours.text">
-                                        Working Hours:
-                                    </h5>
-                                    <p data-translate="footer.contact.workingHours.days">Mon-Fri: 09.00 - 18.00
+                                    <h5 class="m-0">Working Hours</h5>
+                                    <p class="m-0">Mon–Fri: 08:30–17:00</p>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="fa-solid fa-phone me-2 mt-1" aria-hidden="true"></i>
+                                <div class="info">
+                                    <h5 class="m-0">Phone</h5>
+                                    <p class="m-0">
+                                        <a href="tel:+908508882408" aria-label="Call us at +90 850 888 24 08">+90 850
+                                            888 24 08</a>
                                     </p>
                                 </div>
                             </li>
-                            <li>
-                                <i class="fa-solid fa-phone"></i>
+
+                            <li class="d-flex align-items-start">
+                                <i class="fas fa-envelope me-2 mt-1" aria-hidden="true"></i>
                                 <div class="info">
-                                    <h5 data-translate="footer.contact.workingHours.phoneNumber">
-                                        Our Phone Number:
-                                    </h5>
-                                    <p>
-                                        +90 850 888 24 08
+                                    <h5 class="m-0">Email</h5>
+                                    <p class="m-0">
+                                        <a href="mailto:hey@retailmarkup.com"
+                                            aria-label="Email us at hey at retailmarkup dot com">hey@retailmarkup.com</a>
                                     </p>
                                 </div>
                             </li>
@@ -1753,6 +1827,34 @@
     <script src="root/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Retail Markup",
+        "url": "https://www.retailmarkup.com",
+        "logo": "https://www.retailmarkup.com/root/images/logo/RetailMarkupBeyazLogo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+90 850 888 24 08",
+            "contactType": "customer service",
+            "areaServed": "TR",
+            "availableLanguage": ["tr","en"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "19 Mayıs District, Golden Plaza No:3 K:9",
+            "addressLocality": "Şişli",
+            "addressRegion": "Istanbul",
+            "postalCode": "34363",
+            "addressCountry": "TR"
+        },
+        "sameAs": [
+            "https://www.instagram.com/retailmarkup/",
+            "https://www.linkedin.com/company/retailmarkup/"
+        ]
+        }
+    </script>
     <script>
         $(document).ready(function () {
             // Dil dosyasını yükle ve belirtilen alanları güncelle
